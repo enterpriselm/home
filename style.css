@@ -1,0 +1,323 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #dd6413;
+}
+
+.header .subtitle {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+.main-content .section {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.main-content .section:last-child {
+    border-bottom: none;
+}
+
+.about-us .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.about-us .card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-us .card h3 {
+    color: #dd6413;
+    margin-bottom: 15px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product .product-title {
+    font-size: 2.5em;
+    color: #1ac0cf;
+    margin-bottom: 20px;
+}
+
+.product .product-logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product .product-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.primary-button {
+    background-color: #1ac0cf;
+    color: #fff;
+}
+
+.primary-button:hover {
+    background-color: #0e8a96;
+}
+
+.contact-prompt {
+    margin-top: 30px;
+    color: #777;
+}
+
+.contact-email {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.contact-email a {
+    color: #1ac0cf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: #0e8a96;
+    text-decoration: underline;
+}
+
+.partners-section {
+    background-color: #f9f9f9;
+}
+
+.partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.partner-item {
+    text-align: center;
+    max-width: 180px;
+}
+
+.partner-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.partner-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-item img:hover {
+    transform: scale(1.05);
+}
+
+.partner-item .partner-name {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.contact-section {
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info .icon {
+    width: 24px;
+    height: 24px;
+    fill: #777;
+}
+
+.footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    margin-top: 60px;
+}
+
+.company-logo {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.header h1, .header .subtitle {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.about-us .card {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.product h2, .product img, .product .product-description, .product .button-container, .product .contact-prompt, .product .contact-email {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.partners-section h2, .partners-list {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-section h2, .contact-info {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.genaitor-section {
+    background-color: #1a1a1a !important;
+    color: #f0f0f0 !important;
+    border-bottom: none !important;
+}
+
+.pinneapple-section {
+    background-color: #1a1a1a !important;
+    color: #f0f0f0 !important;
+}
+
+.genaitor-section .product-title,
+.pinneapple-section .product-title {
+    color: #dd6413 !important;
+}
+
+.genaitor-section .product-description,
+.pinneapple-section .product-description {
+    color: #f0f0f0 !important;
+}
+
+.genaitor-section .contact-prompt,
+.genaitor-section .contact-email {
+    color: #ccc !important;
+}
+
+.genaitor-section .contact-email a {
+    color: #1ac0cf !important;
+}
+
+.cta-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.cta-section h2 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
