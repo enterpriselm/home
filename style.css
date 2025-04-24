@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    font-size: 14px;
 }
 
 .header {
@@ -206,6 +207,13 @@ body {
 }
 
 .company-logo {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+.company-logo-footer {
     display: block;
     max-width: 100px;
     height: auto;
