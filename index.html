@@ -12,12 +12,51 @@
 <body>
     <header class="header">
         <div class="container">
-            <img src="LOGO-COM-NOME-OFICIAL.png" alt="ELM Logo" class="company-logo"> 
+            <img src="LOGO-COM-NOME-PNG.png" alt="ELM Logo" class="company-logo"> 
             <p class="subtitle">Democratizing Access to Artificial Intelligence</p>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#genaitor">GenAItor</a></li>
+                    <li><a href="#pinneapple">PINNeAPPle</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <main class="main-content">
+    <div class="carousel-container">
+        <input type="radio" name="carousel" id="video1" checked>
+        <input type="radio" name="carousel" id="video2">
+        <input type="radio" name="carousel" id="video3">
+    
+        <div class="videos">
+          <div class="video-slide video1">
+            <video controls autoplay muted loop>
+              <source src="genaitor.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+          </div>
+          <div class="video-slide video2">
+            <video controls autoplay muted loop>
+              <source src="Genaitor_SatImg.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-slide video3">
+            <video controls autoplay muted loop>
+              <source src="genaitor_ocr.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+    
+        <div class="carousel-nav">
+          <label for="video1">Generating PINN</label>
+          <label for="video2">Satellite Images Analysis</label>
+          <label for="video3">OCR for automate tasks</label>
+        </div>
+      </div>
+    <br>
+      <main class="main-content">
         <section id="about-us" class="section about-us">
             <div class="container">
                 <h2>About Us</h2>
